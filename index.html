@@ -1260,30 +1260,30 @@
       </div>
     </div>
 
-    <form class="contact-form" onsubmit="handleForm(event)">
+    <form class="contact-form" action="https://flowform.to/aetherixinc@gmail.com" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Your Name</label>
-          <input class="form-input" type="text" placeholder="Amal Perera" required>
+          <input class="form-input" name="name" type="text" placeholder="Amal Perera" required>
         </div>
         <div class="form-group">
           <label class="form-label">Company</label>
-          <input class="form-input" type="text" placeholder="Your Company Ltd.">
+          <input class="form-input" name="company" type="text" placeholder="Your Company Ltd.">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">Email</label>
-          <input class="form-input" type="email" placeholder="you@company.com" required>
+          <input class="form-input" name="email" type="email" placeholder="you@company.com" required>
         </div>
         <div class="form-group">
           <label class="form-label">Phone</label>
-          <input class="form-input" type="tel" placeholder="+94 77 000 0000">
+          <input class="form-input" name="phone" type="tel" placeholder="+94 77 000 0000">
         </div>
       </div>
       <div class="form-group">
         <label class="form-label">Service Interested In</label>
-        <select class="form-select">
+        <select class="form-select" name="service">
           <option value="">Select a service...</option>
           <option>Business Process Automation</option>
           <option>Odoo ERP Implementation</option>
@@ -1294,7 +1294,7 @@
       </div>
       <div class="form-group">
         <label class="form-label">Tell Us About Your Requirement</label>
-        <textarea class="form-textarea" placeholder="Briefly describe your current challenges and what you're looking to achieve..."></textarea>
+        <textarea class="form-textarea" name="message" placeholder="Briefly describe your current challenges and what you're looking to achieve..."></textarea>
       </div>
       <button class="form-submit" type="submit">Send Message & Request Consultation →</button>
     </form>
